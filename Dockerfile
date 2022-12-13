@@ -10,7 +10,7 @@ RUN apt-get update
 
 # Install Chrome (Version 106)
 # See all available versions for download on: https://www.ubuntuupdates.org/package_logs?type=ppas&vals=8
-RUN apt-get install -y xvfb xdg-utils libgtk-3-0 lsb-release libappindicator3-1 fonts-liberation libasound2 libnspr4 libnss3 libgbm1 \
+RUN apt-get install -y curl xvfb xdg-utils libgtk-3-0 lsb-release libappindicator3-1 fonts-liberation libasound2 libnspr4 libnss3 libgbm1 \
   && curl https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${CHROME_VERSION}_amd64.deb -O \
   && dpkg -i google-chrome-stable_${CHROME_VERSION}_amd64.deb \
   && rm google-chrome-stable_${CHROME_VERSION}_amd64.deb \
