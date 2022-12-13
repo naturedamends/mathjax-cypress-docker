@@ -19,4 +19,10 @@ jobs:
           install-command: npm install
           build: npm run build
           start: npm start
-          wait-on: 'npx wait-on -v --timeout 40000 http-get://localhost:80'
+          wait-on: 'npx wait-on -v --timeout 100000 http-get://localhost:80'
+      - name: Save cypress images
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          if-no-files-found: error
+          path: cypress-visual-screenshots
