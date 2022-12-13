@@ -1,4 +1,4 @@
-baseURL = "http://site.test.dev"
+baseURL = "http://localhost"
 title = "HugoTeX"
 paginate = 3
 languageCode = "en"

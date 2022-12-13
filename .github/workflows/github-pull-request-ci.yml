@@ -19,4 +19,4 @@ jobs:
           install-command: npm install
           build: npm run build
           start: npm start
-          wait-on: 'npx wait-on --timeout 4000 http://localhost:80'
+          wait-on: 'npx wait-on --timeout 10000 http://localhost:80'
