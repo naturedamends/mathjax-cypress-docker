@@ -14,7 +14,7 @@
     "ci": "npm run build",
     "start": "docker-compose up -d server",
     "build": "./bin/hugo/hugo -D",
-    "postinstall": "hugo-installer --version 0.103.0",
+    "postinstall": "hugo-installer --version 0.103.0"
   },
   "devDependencies": {
     "cypress": "^10.0.0",
