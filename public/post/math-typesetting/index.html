@@ -8,12 +8,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-<link rel="stylesheet" href="http://site.test.dev:1313css/latex.css" />
-<link rel="stylesheet" href="http://site.test.dev:1313css/main.css" />
+<link rel="stylesheet" href="http://localhost:8000/css/latex.css" />
+<link rel="stylesheet" href="http://localhost:8000/css/main.css" />
 
-<link rel="stylesheet" href="http://site.test.dev:1313css/darkmode.css" />
+<link rel="stylesheet" href="http://localhost:8000/css/darkmode.css" />
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<meta name="generator" content="Hugo 0.103.0" /><body>
+<meta name="generator" content="Hugo 0.92.2" /><body>
 
 
 
@@ -59,10 +59,10 @@
 <li>Within this partial reference the <a href="https://katex.org/docs/autorender.html">Auto-render Extension</a> or host these scripts locally.</li>
 <li>Include the partial in your templates like so:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#5bc4bf">{{</span> <span style="color:#815ba4">if</span> or .Params.math .Site.Params.math <span style="color:#5bc4bf">}}</span>
-</span></span><span style="display:flex;"><span><span style="color:#5bc4bf">{{</span> partial <span style="color:#48b685">&#34;math.html&#34;</span> . <span style="color:#5bc4bf">}}</span>
-</span></span><span style="display:flex;"><span><span style="color:#5bc4bf">{{</span> end <span style="color:#5bc4bf">}}</span>
-</span></span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#5bc4bf">{{</span> <span style="color:#815ba4">if</span> or .Params.math .Site.Params.math <span style="color:#5bc4bf">}}</span>
+<span style="color:#5bc4bf">{{</span> partial <span style="color:#48b685">&#34;math.html&#34;</span> . <span style="color:#5bc4bf">}}</span>
+<span style="color:#5bc4bf">{{</span> end <span style="color:#5bc4bf">}}</span>
+</code></pre></div><ul>
 <li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li>
 <li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files</li>
 </ul>
@@ -350,9 +350,9 @@ $$</p>
       <p class="credits theme-by">
         Powered By <a href="https://gohugo.io">Hugo</a>&nbsp;/&nbsp;Theme&nbsp;<a href="https://github.com/kaisugi/HugoTeX">HugoTeX</a>
         <br>
-        <a href="http://site.test.dev:1313about">Kaito Sugimoto</a>
+        <a href="http://localhost:8000/about">Kaito Sugimoto</a>
         &copy;
-        2021
+        2019
       </p>
   </div>
 </footer></body>
