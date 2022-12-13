@@ -8,7 +8,7 @@ services:
       - "./public/:/srv/"
     command: "caddy file-server"
     ports:
-      - 80:80
+      - 8000:80
     networks:
       main:
         aliases:
