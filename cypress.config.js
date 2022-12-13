@@ -11,5 +11,5 @@ module.exports = defineConfig({
     "preserveOriginalScreenshot": true
   },
   scrollBehavior: false,
-  waitForAnimations: 1
+  animationDistanceThreshold: 1
 });
