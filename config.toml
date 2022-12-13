@@ -1,4 +1,4 @@
-baseURL = "http://localhost"
+baseURL = "http://localhost:80"
 title = "HugoTeX"
 paginate = 3
 languageCode = "en"
