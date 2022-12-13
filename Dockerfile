@@ -7,7 +7,6 @@ ENV CHROME_VERSION         106.0.5249.61-1
 ENV DISPLAY_CONFIGURATION=1000x600x24
 
 RUN apt-get update
-RUN apt-get install -y curl libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
 
 # Install Chrome (Version 106)
 # See all available versions for download on: https://www.ubuntuupdates.org/package_logs?type=ppas&vals=8
