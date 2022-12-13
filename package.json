@@ -10,12 +10,11 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "test": "npm start && cypress run",
+    "test": "cypress run",
     "ci": "npm run build",
-    "start": "wait-on http-get://site.test.dev:80 -v -t 2000 -l --httpTimeout 1000 && echo 'found localhost'",
+    "start": "docker-compose up -d server",
     "build": "./bin/hugo/hugo -D",
     "postinstall": "hugo-installer --version 0.103.0",
-    "dale": "docker-compose up -d "
   },
   "devDependencies": {
     "cypress": "^10.0.0",
