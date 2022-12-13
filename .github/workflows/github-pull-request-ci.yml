@@ -17,6 +17,8 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
+           browser: chrome
+          headed: true
           install-command: npm install
           wait-on: 'npx wait-on -v --timeout 100000 http-get://localhost:8000'
       - name: Save cypress images
