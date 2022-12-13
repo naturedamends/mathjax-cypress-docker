@@ -5,7 +5,7 @@ name: Pull request pipeline
 on:  
   pull_request:
     branches:
-      - master
+      - main 
 jobs:
   cypress-run:
     timeout-minutes: 10
