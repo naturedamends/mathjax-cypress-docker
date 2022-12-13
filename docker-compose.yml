@@ -1,0 +1,23 @@
+networks:
+  main:
+
+services:
+  server:
+    image: caddy
+    volumes:
+      - "./public/:/srv/"
+    ports:
+      - 8000:80
+    command: "caddy file-server --browse"
+    networks:
+      main:
+        aliases:
+          - site.test.dev
+
+  runner:
+    build: .
+    volumes:
+      - ./public:/e2e/public
+      - ./cypress-visual-screenshots/:/e2e/cypress-visual-screenshots
+    networks:
+      main:

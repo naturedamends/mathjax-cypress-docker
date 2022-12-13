@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:naturedamends/mathjax-cypress-docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "npm start && cypress run",
+    "ci": "npm run build",
+    "start": "wait-on http-get://site.test.dev:80 -v -t 2000 -l --httpTimeout 1000 && echo 'found localhost'",
+    "build": "./bin/hugo/hugo -D",
+    "postinstall": "hugo-installer --version 0.103.0",
+    "dale": "docker-compose up -d "
+  },
+  "devDependencies": {
+    "cypress": "^10.0.0",
+    "cypress-image-diff-js": "^1.22.0",
+    "hugo-installer": "^4.0.1",
+    "wait-on": "^6.0.1"
+  }
+}
