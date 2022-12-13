@@ -24,4 +24,4 @@ theme = "hugotex"
     style = "paraiso-dark"
 
 [Params]
-  darkmode = true
+  darkmode = true 
