@@ -2,7 +2,7 @@ const crypto = require('crypto')
 
 const routes = [
     "/post/emoji-support/",
-    "/post/marksdown-syntax/",
+    "/post/markdown-syntax/",
     "/post/math-typesetting/",
     "/post/placeholder-text/",
     "/post/rich-content/",
