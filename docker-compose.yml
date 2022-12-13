@@ -6,7 +6,7 @@ services:
     image: caddy
     volumes:
       - "./public/:/srv/"
-    command: "caddy file-server --browse"
+    command: "caddy file-server"
     ports:
       - 80:80
     networks:
