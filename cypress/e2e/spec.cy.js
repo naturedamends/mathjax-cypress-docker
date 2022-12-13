@@ -22,6 +22,6 @@ describe('Visuals', () => {
             limit: 5,
             delay: 500
         }
-        cy.compareSnapshot(r.hash + r.name.replace('/', '-'), 0, retryOptions)
+        cy.compareSnapshot(r.hash + r.name.replaceAll('/', '-'), 0, retryOptions)
     }))
 })
