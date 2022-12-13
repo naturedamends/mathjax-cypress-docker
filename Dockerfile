@@ -1,4 +1,4 @@
-FROM cypress/base:16.3.0
+FROM cypress/base:16.18.1
 
 ENV NPM_CONFIG_LOGLEVEL    warn
 ENV NPM_CONFIG_UNSAFE_PERM true
