@@ -13,11 +13,3 @@ services:
       main:
         aliases:
           - site.test.dev
-
-  runner:
-    build: .
-    volumes:
-      - ./public:/e2e/public
-      - ./cypress-visual-screenshots/:/e2e/cypress-visual-screenshots
-    networks:
-      main:
